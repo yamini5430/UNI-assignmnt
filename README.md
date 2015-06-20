@@ -1,2 +1,2 @@
-# UNI-assignmnt
-assignment of UNI
+# readme file
+I love javascript,html and CSS and i am a beginner in angularJS
