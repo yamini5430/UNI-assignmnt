@@ -2,11 +2,11 @@ $(document).ready(function() {
 			var listWidth = [];
 			var total = 0;
 			 // new li to append
-			var li = $('<li><a>more</a></li>')
+			var li = $('<li><div class="img"></div><a href ="#" id="link1">more</a></li>')
 			$(li).addClass("list last");
 			 // new ul to be appended to ul
 			var ul = $('<ul>')
-            ul.addClass("ujk");
+            //get the width of browser window
 			var winWidth = $(window).width();
 			// variable to store index of element after which new li(more) will be added
 			var $index = true;
@@ -15,35 +15,25 @@ $(document).ready(function() {
 			var $value_set = true;
 			$('#wrap ul li').each(function() {
 			    total += parseInt($(this).width());
-			    //alert(total);
-			    //alert(winWidth);
-			    //alert($(this).index());
+                //if window width is less than the total width of elements in menu
 			    if (total > winWidth){
 			        if ($value_set) {
-			           // alert($(this).index());
 				        $index = $(this).index() - 3;
-				        //alert($index);
 				    	$value_set = false; 
 					}
 			    }
 			   
 			});
 			if (!$value_set) {
-			   // alert("ac");
+                //for each menu item this method called
 			    $("#wrap ul li:gt(" + $index + ")").each(function () {
-			        ////alert($(this).index());
-			        //alert($(this).value());
+                     
                     var flag= $(this).is(':last-child');
                     if(!flag) {
 			           ul.append(this);
                     } 
-                    /*else {
-                       // remove last element
-                        $(this).detach();
-                    }*/
-			        //$(this).addClass("last after");
 			    });
-  var count = ul.children().length;
+  
                // alert(count);
                 //li.text(count);
 			   /* if (ul.length) {
@@ -52,7 +42,8 @@ $(document).ready(function() {
                 //add newly added list element as second last element in the list
       $('#wrap ul').find(' > li:nth-last-child(1)').before(li.append(ul));
                     
-			    
+			  var count = ul.children().length;
+    $("#link1").text(count);  
                 
                 
 			}
