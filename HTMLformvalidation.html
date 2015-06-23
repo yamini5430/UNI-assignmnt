@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src ="HTMLformvalidation.js"></script>
+    <link rel="stylesheet" href="HTMLformvalidation.css">
+</head>
+<body>
+<form id="userform" name="UserForm" action="#">
+     <h1>Enter your details:- </h1>
+
+    <p><label for = "fullname">Full Name :</label>
+        <input type="text" name="fullname" id="usrname" onkeyup="updateValue(this)"></input><label class= "reqd">*</label>
+    </p>
+    <p><label for = "email">Email Address :</label>
+        <input type="text" name="email" id="emailaddr" onkeyup="updateValue(this)"></input><label class = "reqd">*</label>
+    </p>
+    <p><label for = "password">Password :</label>
+        <input type="password" name="password" id="pwd" onkeyup="updateValue(this)"></input><label class= "reqd">*</label>
+    </p>
+    <p><label for = "phone">Phone Number :</label>
+        <input type="text" id="phone" name="phone" onkeyup="updateValue(this)"></input><label class = "reqd">*</label>
+    </p>
+    <p><label for="DOB">Date Of Birth :</label>
+        <input type="text" id="dob" name="DOB" onkeyup="updateValue(this)" /><label class= "reqd">*</label> <label>(dd/mm/yyyy)</label>
+    </p>
+   <input type="button" name="submit" value="Submit" id="submit" tabindex="10" onclick ="return validateMyForm(this.form);"></input>
+</form>
+
+</body>
+</html>
