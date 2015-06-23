@@ -1,3 +1,2 @@
 # readme file
-I love javascript,html and CSS and i am a beginner in angularJS
-Hello World
+It contains the code(js,html and css) for creating responsive menus using jquery ,javascript,html and css
