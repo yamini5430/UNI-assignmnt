@@ -1,3 +1,4 @@
 # readme file
-I love javascript,html and CSS and i am a beginner in angularJS
-Hello World
+This repository contains the code for:
+1)Validating HTML inputs using javascript,html and css
+2Creating Responsive navigation menus using javascript,jquery,html and css
